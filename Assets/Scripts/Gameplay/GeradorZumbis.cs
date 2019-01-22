@@ -79,7 +79,7 @@ public class GeradorZumbis : MonoBehaviour {
     {
         Vector3 posicao = Random.insideUnitSphere * distanciaDeGeracao;
         posicao += transform.position;
-        posicao.y = 0;
+        posicao.y = this.transform.position.y;
 
         return posicao;
     }
